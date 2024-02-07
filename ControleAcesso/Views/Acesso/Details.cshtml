@@ -1,0 +1,74 @@
+﻿@model ControleAcesso.Models.ACESSO
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Details</title>
+</head>
+<body>
+    <div>
+        <h4>ACESSO</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.EMAIL)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.EMAIL)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.SENHA)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.SENHA)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.ATIVO)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.ATIVO)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.PERFIL)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.PERFIL)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.NOME)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.NOME)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.SOBRENOME)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.SOBRENOME)
+            </dd>
+    
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.ID_LOGIN }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+</body>
+</html>

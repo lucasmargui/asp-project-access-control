@@ -1,0 +1,83 @@
+﻿@model IEnumerable<ControleAcesso.Models.ACESSO>
+
+@{
+	Layout = null;
+}
+
+<link href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css" rel="stylesheet" />
+<link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+<link href="~/Content/styles.css" rel="stylesheet" />
+<link href="~/Content/Site.css" rel="stylesheet" />
+
+
+
+
+
+
+
+<p>
+	@Html.ActionLink("Novo usuário", "Create", "Acesso", null, new { @class = "original-button" })
+</p>
+
+
+
+
+<table class="table" id="table_id">
+	<tr>
+		<th>
+			@Html.DisplayNameFor(model => model.EMAIL)
+		</th>
+		<th>
+			@Html.DisplayNameFor(model => model.SENHA)
+		</th>
+		<th>
+			@Html.DisplayNameFor(model => model.ATIVO)
+		</th>
+		<th>
+			@Html.DisplayNameFor(model => model.PERFIL)
+		</th>
+		<th>
+			@Html.DisplayNameFor(model => model.NOME)
+		</th>
+		<th>
+			@Html.DisplayNameFor(model => model.SOBRENOME)
+		</th>
+		<th></th>
+	</tr>
+
+	@foreach (var item in Model)
+	{
+		<tr>
+			<td>
+				@Html.DisplayFor(modelItem => item.EMAIL)
+			</td>
+			<td>
+				@Html.DisplayFor(modelItem => item.SENHA)
+			</td>
+			<td>
+				@Html.DisplayFor(modelItem => item.ATIVO)
+			</td>
+			<td>
+				@Html.DisplayFor(modelItem => item.PERFIL)
+			</td>
+			<td>
+				@Html.DisplayFor(modelItem => item.NOME)
+			</td>
+			<td>
+				@Html.DisplayFor(modelItem => item.SOBRENOME)
+			</td>
+
+		</tr>
+	}
+
+</table>
+
+@section Scripts{
+	<!-- JS -->
+	<script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$('#table_id').DataTable();
+		});
+	</script>
+}
