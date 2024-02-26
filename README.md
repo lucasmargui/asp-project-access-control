@@ -6,12 +6,15 @@
 * NET 4.7.0
 * Entity Framework
 
- ## Criação do Banco de Dados.
+## Criação do Banco de Dados.
 
  Criar Banco de Dados DEVMEDIAEntities.
 
-  ## Execução do Entity Framework nas IDE's: VS 2015/2017:
- 
+## Execução do Entity Framework nas IDE's: VS 2015/2017:
+
+<details>
+  <summary>Clique para mostrar conteúdo</summary>
+  
  Ao realizar os comandos:
  
   ```
@@ -51,13 +54,40 @@ Web.Config
 </connectionStrings>
 ```
 
+</details>
+
+ 
+
+
 ## Resultado 
 
-### Login
-<img src="https://cdn.discordapp.com/attachments/1046824853015113789/1204883256416141364/image.png?ex=65d659f9&is=65c3e4f9&hm=8b0d6d99de2993d2b5a5b3e9efb142b9010201dcb01d8f1c44fe8e4da6294e2e&" alt="">
 
-### Home
-<img src="https://cdn.discordapp.com/attachments/1046824853015113789/1204883384304795669/image.png?ex=65d65a18&is=65c3e518&hm=98616cd0aa33844658bd6e3b4604f1bf8583de5ed21b0e2708e202da78263df8&" alt="">
 
-### Usuários
-<img src="https://cdn.discordapp.com/attachments/1046824853015113789/1204883458422341652/image.png?ex=65d65a2a&is=65c3e52a&hm=ce7b333d34c77b171141dde32894d1da6679b972e42dbe36207a7b039ec0ee11&" alt="">
+
+<div align="center">
+ <h3>Login</h3>
+<img src="https://github.com/lucasmargui/ASP_Controle_Acesso/assets/157809964/13aa059e-085e-4d34-83ae-7cccb7542353" style="width:100%">
+</div>
+
+
+
+
+
+
+
+
+<div align="center">
+  <h3>Home</h3>
+<img src="https://github.com/lucasmargui/ASP_Controle_Acesso/assets/157809964/6be73396-7d9e-49f4-b115-5213c7aae000" style="width:100%">
+</div>
+
+
+
+
+<div align="center">
+  <h3>Usuários</h3>
+<img src="https://github.com/lucasmargui/ASP_Controle_Acesso/assets/157809964/8a2388e7-80a5-4947-bbd4-4f37a4eaaf39" style="width:100%">
+</div>
+
+
+
