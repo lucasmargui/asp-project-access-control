@@ -1,93 +1,77 @@
-<H1 align="center">Controle de Acesso</H1>
-<p align="center">🚀 Projeto de criação de uma estrutura de Controle de Acesso para referências futuras</p>
+<H1 align="center">Access Control</H1>
+<p align="center">🚀 Project to create an Access Control structure for future references</p>
 
-## Recursos Utilizados
+## Resources Used
 
 * NET 4.7.0
 * Entity Framework
 
-## Criação do Banco de Dados.
 
- Criar Banco de Dados DEVMEDIAEntities.
+<div align="center">
+  <h3>Login</h3>
+<img src="https://github.com/lucasmargui/ASP_Controle_Acesso/assets/157809964/13aa059e-085e-4d34-83ae-7cccb7542353" style="width:70%">
+</div>
 
-## Execução do Entity Framework nas IDE's: VS 2015/2017:
+
+<div align="center">
+   <h3>Home</h3>
+<img src="https://github.com/lucasmargui/ASP_Controle_Acesso/assets/157809964/6be73396-7d9e-49f4-b115-5213c7aae000" style="width:70%">
+</div>
+
+
+<div align="center">
+   <h3>Users</h3>
+<img src="https://github.com/lucasmargui/ASP_Controle_Acesso/assets/157809964/8a2388e7-80a5-4947-bbd4-4f37a4eaaf39" style="width:70%">
+</div>
+
+## Database Creation.
+
+  Create DEVMEDIAEntities Database.
+
+## Entity Framework execution in IDE's: VS 2015/2017:
 
 <details>
-  <summary>Clique para mostrar conteúdo</summary>
+   <summary>Click to show content</summary>
   
- Ao realizar os comandos:
+  When executing the commands:
  
-  ```
-    Enable-Migrations
-  ```
-  e
+   ```
+     Enable-Migrations
+   ```
+   It is
   
-  ```
-    Update-Database -Verbose
-  ```
+   ```
+     Update-Database -Verbose
+   ```
   
-Nas versões mais recentes do Visual Studio (2015/2017), se faz necessário criar uma nova instância do localdb do sql no seu computador. A qual poderá ser criado da seguinte maneira:
+In the most recent versions of Visual Studio (2015/2017), it is necessary to create a new instance of sql localdb on your computer. Which can be created in the following way:
 
-Passo 1: Abrir o cmd e executar o seguinte comando:
-  ```
-  SqlLocalDB.exe create "Local"
-  ```
-Passo 2: Executar a instance com seguinte comando:
-  ```
-  SqlLocalDb.exe start
-  ```
+Step 1: Open cmd and execute the following command:
+   ```
+   SqlLocalDB.exe create "Local"
+   ```
+Step 2: Run the instance with the following command:
+   ```
+   SqlLocalDb.exe start
+   ```
   
-Passo 3: Ir até o 'Package Manager Console' e executar o seguinte comando:
-  ```
-  Update-Database -Verbose
-  ```
+Step 3: Go to the 'Package Manager Console' and execute the following command:
+   ```
+   Update-Database -Verbose
+   ```
 
-## Alteração da String de conexão
+## Changing the connection string
 
-Configurar a connectionStrings com banco de dados local onde 'name' será utilizado como referência para conexão com Entity Framework
+Configure connectionStrings with local database where 'name' will be used as a reference for connecting to Entity Framework
 ```
 Web.Config
 ```
 ```
 <connectionStrings>
-  <add name="DEVMEDIAEntities" connectionString="Data Source=(localdb)\Local;Initial Catalog=DEVMEDIAEntities;Integrated Security=True;" providerName="System.Data.SqlClient" />
+   <add name="DEVMEDIAEntities" connectionString="Data Source=(localdb)\Local;Initial Catalog=DEVMEDIAEntities;Integrated Security=True;" providerName="System.Data.SqlClient" />
 </connectionStrings>
 ```
 
 </details>
 
  
-
-
-## Resultado 
-
-
-
-
-<div align="center">
- <h3>Login</h3>
-<img src="https://github.com/lucasmargui/ASP_Controle_Acesso/assets/157809964/13aa059e-085e-4d34-83ae-7cccb7542353" style="width:100%">
-</div>
-
-
-
-
-
-
-
-
-<div align="center">
-  <h3>Home</h3>
-<img src="https://github.com/lucasmargui/ASP_Controle_Acesso/assets/157809964/6be73396-7d9e-49f4-b115-5213c7aae000" style="width:100%">
-</div>
-
-
-
-
-<div align="center">
-  <h3>Usuários</h3>
-<img src="https://github.com/lucasmargui/ASP_Controle_Acesso/assets/157809964/8a2388e7-80a5-4947-bbd4-4f37a4eaaf39" style="width:100%">
-</div>
-
-
-
