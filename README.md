@@ -24,7 +24,7 @@
 <img src="https://github.com/lucasmargui/ASP_Controle_Acesso/assets/157809964/8a2388e7-80a5-4947-bbd4-4f37a4eaaf39" style="width:70%">
 </div>
 
-## Database Creation.
+## Database Create.
 
   Create DEVMEDIAEntities Database.
 
